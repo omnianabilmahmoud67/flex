@@ -1,0 +1,129 @@
+:root{
+    --maincolor: #ff6348;
+    --white: #ffffff;
+    --blue: #3742fa;
+    --black: #2f3542;
+    --defult-font-size: 10px;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fruktur', cursive;
+    font-family: 'Merriweather', serif;
+}
+body{
+    height: 1400px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*start nav*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    border-top: 4px solid var(--maincolor);
+}
+nav .logo img{
+    height: 8vh;
+}
+nav .menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+nav .menu li{
+    list-style: none;
+}
+nav .menu li a{
+    color: var(--black);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav .menu li a:hover{
+    font-weight: bold;
+}
+/*end nav*/
+/*start slider*/
+.slider{
+    background-image: url(../img/header.jpg);
+    height: 80vh;
+    background-size: cover;
+  /*  padding: 50px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider .caption{
+    background-color: var(--black);
+    width: 30%;
+    border-left: 4px solid var(--maincolor) ;
+    color: var(--white);
+}
+/*end slider*/
+.about{
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+    background-color: #dfe6e9;
+
+}
+.about p{
+    width: 50%;
+}
+/*start what we offer*/
+.boxes {
+  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  /*  align-content: center;*/
+  /*  align-items: center; */
+  /*  padding: 50px 400px 50px 400px;*/
+  /* flex-direction: row;*/
+}
+.offer{
+    text-align: center;
+    font-size: calc(var(--defult-font-size)+25px);
+}
+
+.box{
+    width: 30%;
+}
+.boxes h3 { 
+    text-align:center; 
+    color: var(--blue);
+} 
+.boxes .box .icon{
+    color: #273c75;
+    font-size: 30px;
+}
+.footer{
+    background-color: #353b48;
+    color: var(--white);
+
+}
+.footer .t-footer{
+    text-transform: uppercase;
+}
+.footer .bouns-menue .icon2{
+    font-size: 15px;
+    color: var(--maincolor);
+}
+.footer .bouns-menue{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .item{
+    width: 50%;
+}
+.last-pargraph{
+    background-color: #2f3640;
+    color: var(--white);
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+.gray-background{
+    background-color: #dfe6e9;
+
+}
